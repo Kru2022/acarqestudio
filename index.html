@@ -8,36 +8,47 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            background-color: #ffffff;
             color: #000;
         }
         header {
-            background-color: #000;
-            color: #fff;
-            padding: 40px 20px;
+            background-color: #ffffff;
+            color: #000;
+            padding: 20px;
             text-align: center;
+            border-bottom: 1px solid #ccc;
+        }
+        header img {
+            width: 120px;
+            margin-bottom: 10px;
         }
         h1 {
             margin: 0;
             font-weight: bold;
-            font-size: 3em;
-            letter-spacing: 1px;
-        }
-        p.subtitulo {
-            margin-top: 10px;
-            font-size: 1.2em;
+            font-size: 2.5em;
         }
         section {
             padding: 40px 20px;
             max-width: 1000px;
             margin: auto;
         }
-        .servicio {
-            margin-bottom: 30px;
+        .sobre-mi, .servicios, .galeria, .contacto {
+            margin-bottom: 60px;
         }
-        .servicio h2 {
-            margin-bottom: 10px;
+        h2 {
             font-weight: bold;
+            border-bottom: 2px solid #000;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .servicio-item {
+            margin-bottom: 20px;
+        }
+        .galeria img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border: 1px solid #ccc;
         }
         .contacto a {
             color: #000;
@@ -47,8 +58,8 @@
             margin-right: 15px;
         }
         footer {
-            background-color: #000;
-            color: #fff;
+            background-color: #f0f0f0;
+            color: #000;
             text-align: center;
             padding: 20px;
             font-size: 0.9em;
@@ -57,42 +68,53 @@
 </head>
 <body>
     <header>
+        <img src="logo.png" alt="AC ARQ Estudio Logo">
         <h1>AC ARQ Estudio</h1>
-        <p class="subtitulo">Proyectos, construcción y gestión arquitectónica</p>
     </header>
 
-    <section>
-        <div class="servicio">
-            <h2>Proyectos de Arquitectura</h2>
-            <p>Diseño integral de espacios residenciales y comerciales adaptados a las necesidades de cada cliente.</p>
-        </div>
+    <section class="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Soy Alejo Julián Carusso, arquitecto egresado de la FADU - UBA, con amplia experiencia en proyectos arquitectónicos, construcción, dibujo técnico y gestiones municipales. En AC ARQ Estudio, combinamos diseño, funcionalidad y eficiencia para crear espacios únicos que se adapten a cada necesidad.</p>
+    </section>
 
-        <div class="servicio">
-            <h2>Construcción y Dirección de Obra</h2>
-            <p>Planificación y ejecución de obras con seguimiento técnico, optimización de tiempos y recursos.</p>
+    <section class="servicios">
+        <h2>Servicios</h2>
+        <div class="servicio-item">
+            <strong>Proyectos de Arquitectura:</strong>
+            <p>Diseño de espacios residenciales y comerciales personalizados.</p>
         </div>
+        <div class="servicio-item">
+            <strong>Construcción y Dirección de Obra:</strong>
+            <p>Supervisión técnica y ejecución precisa de obras.</p>
+        </div>
+        <div class="servicio-item">
+            <strong>Planos Técnicos:</strong>
+            <p>Elaboración de planos de obra, seguridad e instalaciones.</p>
+        </div>
+        <div class="servicio-item">
+            <strong>Carpeta Técnica:</strong>
+            <p>Documentación completa para trámites y obra.</p>
+        </div>
+        <div class="servicio-item">
+            <strong>Gestiones Municipales:</strong>
+            <p>Trámites, visados y aprobación de expedientes.</p>
+        </div>
+    </section>
 
-        <div class="servicio">
-            <h2>Dibujo de Planos Técnicos</h2>
-            <p>Elaboración precisa de planos de obra, electromecánicos, seguridad contra incendio y evacuación.</p>
-        </div>
+    <section class="galeria">
+        <h2>Proyectos</h2>
+        <img src="proyecto1.jpg" alt="Proyecto 1">
+        <img src="proyecto2.jpg" alt="Proyecto 2">
+        <img src="proyecto3.jpg" alt="Proyecto 3">
+        <img src="proyecto4.jpg" alt="Proyecto 4">
+    </section>
 
-        <div class="servicio">
-            <h2>Carpeta Técnica de Obra</h2>
-            <p>Preparación completa de documentación técnica para presentación municipal y ejecución de obra.</p>
-        </div>
-
-        <div class="servicio">
-            <h2>Gestiones Municipales</h2>
-            <p>Asesoramiento y realización de trámites, visados, pagos y expedientes hasta su aprobación final.</p>
-        </div>
-
-        <div class="contacto">
-            <h2>Contacto</h2>
-            <a href="https://wa.me/5493484549061" target="_blank">WhatsApp</a>
-            <a href="https://instagram.com/acarq_estudio" target="_blank">Instagram</a>
-            <a href="mailto:carussoalejo@gmail.com">Email</a>
-        </div>
+    <section class="contacto">
+        <h2>Contacto</h2>
+        <p>¿Querés iniciar tu proyecto? ¡Hablemos!</p>
+        <a href="https://wa.me/5493484549061" target="_blank">WhatsApp</a>
+        <a href="https://instagram.com/acarq_estudio" target="_blank">Instagram</a>
+        <a href="mailto:carussoalejo@gmail.com">Email</a>
     </section>
 
     <footer>
